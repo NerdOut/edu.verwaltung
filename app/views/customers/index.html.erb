@@ -12,11 +12,16 @@
 <table class="datatable">
   <thead>
     <tr>
-      <th>ID</th>
       <th>Sortname</th>
       <th>Company</th>
-      <th>phone number</th>
+      <th>Phone</th>
       <th>Email</th>
+      <th>Postal</th>
+      <th>Street</th>
+      <th>City</th>
+      <th>Fax</th>
+      <th>Mobile</th>
+      <th>Website</th>
       <th colspan="3">Actions</th>
     </tr>
   </thead>
@@ -24,11 +29,16 @@
   <tbody>
     <% @customers.each do |customer| %>
       <tr>
-        <td><!-- #ID --></td>
         <td><%= customer.sortname %></td>
         <td><%= customer.company %></td>
         <td><%= customer.phone %></td>
         <td><%= customer.email %></td>
+        <td><%= customer.postal %></td>
+        <td><%= customer.street %></td>
+        <td><%= customer.city %></td>
+        <td><%= customer.fax %></td>
+        <td><%= customer.mobile %></td>
+        <td><%= customer.website %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
         <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
