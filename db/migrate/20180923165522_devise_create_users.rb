@@ -44,6 +44,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     add_column :users, :svnumber, :string
     add_column :users, :firstname, :string
     add_column :users, :lastname, :string
+    add_column :users, :birthday, :datetime
     add_column :users, :postal, :string
     add_column :users, :city, :string
     add_column :users, :vacdemand, :string

@@ -29,10 +29,16 @@ ActiveRecord::Schema.define(version: 2018_09_23_172946) do
 
   create_table "orders", force: :cascade do |t|
     t.integer "ordernumber"
-    t.string "text"
-    t.string "customer"
+    t.text "text"
+    t.integer "customer_id"
+    t.datetime "entry_time"
+    t.datetime "finish_time"
+    t.text "comment"
+    t.string "building_license"
+    t.string "bills"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_orders_on_customer_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,6 +62,7 @@ ActiveRecord::Schema.define(version: 2018_09_23_172946) do
     t.string "svnumber"
     t.string "firstname"
     t.string "lastname"
+    t.datetime "birthday"
     t.string "postal"
     t.string "city"
     t.string "vacdemand"
