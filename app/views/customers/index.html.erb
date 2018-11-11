@@ -1,0 +1,40 @@
+<fieldset>
+  <Legend>Navigation</Legend>
+
+<div class="navbar"><%= link_to 'Administration', users_path, admin: true %></div>
+<div class="navbar"><%= link_to 'Ordermanagement', orders_path %></div>
+<div class="navbar"><%= link_to 'New Customer', new_customer_path %></div>
+</fieldset>
+<br>
+<fieldset>
+<Legend>Customers</Legend>
+
+<table class="datatable">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Sortname</th>
+      <th>Company</th>
+      <th>phone number</th>
+      <th>Email</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><!-- #ID --></td>
+        <td><%= customer.sortname %></td>
+        <td><%= customer.company %></td>
+        <td><%= customer.phone %></td>
+        <td><%= customer.email %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</fieldset>
+
+<br>
