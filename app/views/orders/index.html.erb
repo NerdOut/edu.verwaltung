@@ -1,8 +1,8 @@
 <fieldset>
   <Legend>Navigation</Legend>
 
-<div class="navbar"><%= link_to image_tag("administration.JPG", size: "70x70", alt: "Administration"), users_path, admin: true %></div>
-<div class="navbar"><%= link_to image_tag("adressverwaltung.JPG", size: "70x70", alt: "Customermanagement"), customers_path %></div>
+<div class="navbar"><%= link_to image_tag("administration.JPG", size: "70x70", alt: "Administration"), users_path, admin: true, :title => "Administration" %></div>
+<div class="navbar"><%= link_to image_tag("adressverwaltung.JPG", size: "70x70", alt: "Customermanagement"), customers_path, :title => "Customermanagement" %></div>
 <div class="navbar"><%= link_to 'New Order', new_order_path %></div>
 </fieldset>
 <br>
