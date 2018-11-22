@@ -7,43 +7,43 @@
   <h3><b><u>Person</u></b></h3><br>
 <div class="dataview">
     <label>Name</label>
-    <input type="text" name="LName" value="">
+    <input type="text" name="LName" value="<%= @user.firstname %>">
     <label>Vorname</label>
-    <input type="text" name="FName" value="">
+    <input type="text" name="FName" value="<%= @user.lastname %>">
   <br>
 </div>
 <div class="dataview">
     <label>Geburtsdatum</label>
-    <input type="text" name="Birthdate" value="">
+    <input type="text" name="Birthdate" value="<%= @user.birthday %>">
     <label>Kürzel (Win-Login)</label>
-    <input type="text" name="Sign" value="">
+    <input type="text" name="Sign" value="<%= @user.name %>">
     <br>
 </div>
 <br>
 <h3><b><u>Adresse</u></b></h3><br>
 <div class="dataview">
     <label>Straße und Hausnummer</label>
-    <input type="text" name="strhnr" value="">
+    <input type="text" name="strhnr" value="<%= @user.address %>">
     <br>
 </div>
 <div class="dataview">
     <label>Postleitzahl</label>
-    <input type="text" name="zipcode" value="">
+    <input type="text" name="zipcode" value="<%= @user.postal %>">
     <label>Ort</label>
-    <input type="text" name="location" value="">
+    <input type="text" name="location" value="<%= @user.city %>">
     <br>
 </div>
 <h3><b><u>Kontakt</u></b></h3><br>
 <div class="dataview">
     <label>Telefon</label>
-    <input type="text" name="phonenr" value="">
+    <input type="text" name="phonenr" value="<%= @user.phonenumber %>">
     <br>
 </div>
 <div class="dataview">
     <label>Mobil</label>
-    <input type="text" name="" value="">
+    <input type="text" name="" value="<%= @user.mobile %>">
     <label>Email</label>
-    <input type="text" name="email" value="">
+    <input type="text" name="email" value="<%= @user.email %>">
     <br>
 </div>
 <h3><b><u>Sonstiges</u></b></h3><br>

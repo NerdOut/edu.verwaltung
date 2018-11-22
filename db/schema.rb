@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 2018_09_23_172946) do
     t.string "svnumber"
     t.string "firstname"
     t.string "lastname"
-    t.datetime "birthday"
+    t.date "birthday"
     t.string "postal"
     t.string "city"
     t.string "vacdemand"
