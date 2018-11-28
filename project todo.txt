@@ -18,14 +18,14 @@
 
 4. style vereinheitlichen -> alles soweit in scaffolds.scss
 	# fieldset auf allen pages | done
-	# Rahmen / Fieldsets zentriert ausrichten | teilweise done
+	# Rahmen / Fieldsets zentriert ausrichten | done
 	# log in und landing page layout vervollständigen | done
 
 
 Nächste Abgabe:
 	#Breite begrenzen auf 1000-1500px (schon begonnen)
-	#Navigation auf Buttons umstellen, sodass Icons direkt bei Vorhandensein geaddet werden können
-	#Programmseite in einen Gesamtrahmen einfügen
+	#Navigation auf Buttons umstellen, sodass Icons direkt bei Vorhandensein geaddet werden können | DONE
+	#Programmseite in einen Gesamtrahmen einfügen | DONE
 	#Layout Design anpassen ans Aussehen der Originalsoftware
 
 UI ToDo:
