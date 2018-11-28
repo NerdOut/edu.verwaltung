@@ -27,3 +27,7 @@ Nächste Abgabe:
 	#Navigation auf Buttons umstellen, sodass Icons direkt bei Vorhandensein geaddet werden können
 	#Programmseite in einen Gesamtrahmen einfügen
 	#Layout Design anpassen ans Aussehen der Originalsoftware
+
+UI ToDo:
+	#alle Inputseiten sortiert darstellen siehe Administration/show
+	#Inputseiten sind sämtliche edit/shows dargestellt in den jeweiligen form.html.erb
