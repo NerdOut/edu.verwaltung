@@ -1,33 +1,21 @@
 ﻿todo:
 
 1. adminpage
-	# mitarbeiterliste alt version linkt auf extra page mit mitarbeiterdaten | links ja, datenabfrage nein
-	# action spalte mit show edit destroy buttons | done
-	# rahmen style von customerpage | done
+	# spaltennamen anpassen
 2. orderpage
-	# show action button entfernen | done
-	# überzählige spalten entfernen | done
-	# style/namen anpassen | done
+
 3. customerpage
-	# show action button entfernen | done
-	# attribute/namen anpassen
-	# spalten entfernen | done
-		- prefix phone | done
-		- contact person | done
-	# style/namen anpassen | done
+	# attribute/spaltennamen anpassen
 
 4. style vereinheitlichen -> alles soweit in scaffolds.scss
-	# fieldset auf allen pages | done
-	# Rahmen / Fieldsets zentriert ausrichten | done
-	# log in und landing page layout vervollständigen | done
+# Tabelle mit einfachen Rahmen (alá excel)
 
 
 Nächste Abgabe:
-	#Breite begrenzen auf 1000-1500px (schon begonnen)
-	#Navigation auf Buttons umstellen, sodass Icons direkt bei Vorhandensein geaddet werden können | DONE
-	#Programmseite in einen Gesamtrahmen einfügen | DONE
+	#Breite begrenzen auf ~1100px (schon begonnen)
 	#Layout Design anpassen ans Aussehen der Originalsoftware
 
 UI ToDo:
-	#alle Inputseiten sortiert darstellen siehe Administration/show
-	#Inputseiten sind sämtliche edit/shows dargestellt in den jeweiligen form.html.erb
+	# alle Inputseiten sortiert darstellen siehe Administration/show (Inputseiten sind sämtliche edit/shows dargestellt in den jeweiligen form.html.erb)
+	# zweites Fieldset besser ausrichten (browserbreite kann unkontrolliertes offset zum ersten Fieldset/Navbar verursachen)
+	# administration show user page textboxen für plz und mobil ausrichten.
