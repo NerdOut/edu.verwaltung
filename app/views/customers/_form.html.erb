@@ -10,58 +10,44 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<h3><b><u>Person</u></b></h3><br>
+  <div class="dataview">
     <%= form.label :sortname %>
     <%= form.text_field :sortname %>
-  </div>
-
-  <div class="field">
     <%= form.label :company %>
     <%= form.text_field :company %>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
+<h3><b><u>Adresse</u></b></h3><br>
+<div class="dataview">
+  <%= form.label :postal%>
+  <%= form.text_field :postal %>
+  <%= form.label :street %>
+  <%= form.text_field :street %>
+</div>
+<div class="dataview">
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+</div>
+<h3><b><u>Kontakt</u></b></h3><br>
+  <div class="dataview">
     <%= form.label :phone %>
     <%= form.text_field :phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :postal%>
-    <%= form.text_field :postal %>
-  </div>
-
-  <div class="field">
-    <%= form.label :street %>
-    <%= form.text_field :street %>
-  </div>
-
-  <div class="field">
-    <%= form.label :city %>
-    <%= form.text_field :city %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fax %>
-    <%= form.text_field :fax %>
-  </div>
-
-  <div class="field">
     <%= form.label :mobile %>
     <%= form.text_field :mobile %>
   </div>
-
-  <div class="field">
+  <div class="dataview">
+    <%= form.label :fax %>
+    <%= form.text_field :fax %>
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="dataview">
     <%= form.label :website %>
     <%= form.text_field :website %>
   </div>
-
+<br>
   <div class="actions">
     <%= form.submit %>
+    <br>
   </div>
 <% end %>

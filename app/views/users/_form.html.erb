@@ -12,91 +12,65 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <h3><b><u>Person</u></b></h3><br>
+  <div class="dataview">
     <%= form.label :name %>
     <%= form.text_field :name %>
-  </div>
-
-  <div class="field">
     <%= form.label :firstname %>
     <%= form.text_field :firstname %>
-  </div>
-
-  <div class="field">
+    </div>
+  <div class="dataview">
     <%= form.label :lastname %>
     <%= form.text_field :lastname %>
-  </div>
-  <div class="field">
     <%= form.label :birthday %>
     <%= form.date_field :birthday %>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation %>
-  </div>
-
-  <div class="field">
+  <div class="dataview">
     <%= form.label :age %>
     <%= form.text_field :age %>
   </div>
-
-  <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address %>
+<h3><b><u>Adresse</u></b></h3><br>
+<div class="dataview">
+  <%= form.label :address %>
+  <%= form.text_field :address %>
+  <%= form.label :postal %>
+  <%= form.text_field :postal %>
+</div>
+<div class="dataview">
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+</div>
+<h3><b><u>Kontakt</u></b></h3><br>
+<div class="dataview">
+  <%= form.label :phonenumber %>
+  <%= form.text_field :phonenumber %>
+  <%= form.label :mobile %>
+  <%= form.text_field :mobile %>
+</div>
+<div class="dataview">
+  <%= form.label :fax %>
+  <%= form.text_field :fax %>
+  <%= form.label :email %>
+  <%= form.text_field :email %>
   </div>
-
-  <div class="field">
-    <%= form.label :postal %>
-    <%= form.text_field :postal %>
+<h3><b><u>Sonstiges</u></b></h3><br>
+  <div class="dataview">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
   </div>
-
-  <div class="field">
-    <%= form.label :city %>
-    <%= form.text_field :city %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phonenumber %>
-    <%= form.text_field :phonenumber %>
-  </div>
-
-  <div class="field">
-    <%= form.label :mobile %>
-    <%= form.text_field :mobile %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fax %>
-    <%= form.text_field :fax %>
-  </div>
-
-  <div class="field">
+  <div class="dataview">
     <%= form.label :svnumber %>
     <%= form.text_field :svnumber %>
   </div>
-
-  <div class="field">
+  <div class="dataview">
     <%= form.label :admin %>
     <%= form.check_box :admin %>
-  </div>
-
-  <div class="field">
     <%= form.label :active %>
     <%= form.check_box :active %>
   </div>
-
-  <div class="actions">
+  <div style="align-center">
     <%= form.submit %>
   </div>
 <% end %>

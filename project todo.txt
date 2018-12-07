@@ -8,14 +8,16 @@
 	# attribute/spaltennamen anpassen
 
 4. style vereinheitlichen -> alles soweit in scaffolds.scss
-# Tabelle mit einfachen Rahmen (alá excel)
+# Tabelle mit einfachen Rahmen (alá excel) | DONE
 
 
 Nächste Abgabe:
-	#Breite begrenzen auf ~1100px (schon begonnen)
+	#Breite begrenzen auf ~1100px (schon begonnen) | DONE
 	#Layout Design anpassen ans Aussehen der Originalsoftware
 
 UI ToDo:
-	# alle Inputseiten sortiert darstellen siehe Administration/show (Inputseiten sind sämtliche edit/shows dargestellt in den jeweiligen form.html.erb)
-	# zweites Fieldset besser ausrichten (browserbreite kann unkontrolliertes offset zum ersten Fieldset/Navbar verursachen)
-	# administration show user page textboxen für plz und mobil ausrichten.
+	# alle Inputseiten sortiert darstellen siehe Administration/show (Inputseiten sind sämtliche edit/shows dargestellt in den jeweiligen form.html.erb) | DONE
+	# zweites Fieldset besser ausrichten (browserbreite kann unkontrolliertes offset zum ersten Fieldset/Navbar verursachen) | begonnen aber noch keine garantierten Erfolge
+	# administration show user page textboxen für plz und mobil ausrichten. | DONE, textausrichtung allerdings lnksbündig
+  # fehlende ruby fields in die show&edit seiten einfügen (Platzhalter Kommentare ersetzten)
+	 	- pro dataview div max. 4 fields. (Spaltenanzahl)

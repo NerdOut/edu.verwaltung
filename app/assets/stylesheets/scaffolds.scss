@@ -11,7 +11,8 @@
 
 .navbar
 {
-  margin:auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   text-align: center;
   display:inline-block;
   padding-left: 2px;
@@ -39,7 +40,7 @@ h3
 }
 .dataview {
   column-count:4;
-  text-align: center;
+  text-align: left;
 }
 
 .datatable
@@ -63,11 +64,13 @@ body {
 
 thead, th, tr, td, table
 {
+  border-collapse: collapse;
   border: 2px solid black;
   border-spacing: 2px;
   margin: 0 auto;
   text-align: center;
 }
+
 
 
 tr:hover

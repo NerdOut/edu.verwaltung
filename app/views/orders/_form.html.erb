@@ -10,47 +10,34 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<h3><b><u> </u></b></h3><br>
+  <div class="dataview">
     <%= form.label :ordernumber %>
     <%= form.text_field :ordernumber %>
-  </div>
-
-  <div class="field">
-    <%= form.label :text %>
-    <%= form.text_area :text %>
-  </div>
-
-  <div class="field">
     <%= form.label :customer %>
     <%= collection_select(:order, :customer_id, Customer.all, :id, :name_with_initial) %>
   </div>
-
-  <div class="field">
+  <h3><b><u> </u></b></h3><br>
+  <div class="dataview">
     <%= form.label :entry_time %>
     <%= form.date_field :entry_time %>
-  </div>
-
-  <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_area :comment %>
-  </div>
-
-  <div class="field">
-    <%= form.label :building_license %>
-    <%= form.text_field :building_license %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bills %>
-    <%= form.text_field :bills %>
-  </div>
-
-  <div class="field">
     <%= form.label :finish_time %>
     <%= form.date_field :finish_time %>
   </div>
-
+  <h3><b><u> </u></b></h3><br>
+  <div class="dataview">
+    <%= form.label :bills %>
+    <%= form.text_field :bills %>
+    <%= form.label :building_license %>
+    <%= form.text_field :building_license %>
+  </div>
+  <h3><b><u> </u></b></h3><br>
+  <div class="dataview">
+    <%= form.label :text %>
+    <%= form.text_field :text %>
+    <%= form.label :comment %>
+    <%= form.text_field :comment %>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>

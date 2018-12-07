@@ -1,24 +1,29 @@
 <p id="notice"><%= notice %></p>
 <div class="border">
-<p>
-  <strong>Sortname</strong>
+  <fieldset>
+    <legend>Kundendaten:</legend>
+  <h3><b><u>Person</u></b></h3><br>
+<div class="dataview">
+  <label>Sortname</label>
   <%= @customer.sortname %>
-</p>
-
-<p>
-  <strong>Company</strong>
+  <label>Company</label>
   <%= @customer.company %>
-</p>
-
-<p>
-  <strong>Email</strong>
+</div><br>
+  <h3><b><u>Kontakt</u></b></h3><br>
+<div class="dataview">
+  <label>Email</label>
   <%= @customer.email %>
-</p>
-
-<p>
-  <strong>Phone</strong>
+  <label>Phone</label>
   <%= @customer.phone %>
-</p>
+</div><br>
+<h3><b><u><!-- Überschrift falls zutreffend--> </u></b></h3><br>
+<div class="dataview">
+  <!-- bis zu 4 ruby fields per dataview div-->
+</div>
+<h3><b><u><!-- Überschrift falls zutreffend--> </u></b></h3><br>
+<div class="dataview">
+  <!-- bis zu 4 ruby fields per dataview div-->
+</div> 
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>

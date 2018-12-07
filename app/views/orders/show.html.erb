@@ -1,15 +1,28 @@
 <p id="notice"><%= notice %></p>
-<div class="border">
-<p>
-  <strong>Ordernumber:</strong>
-  <%= @order.ordernumber %>
-</p>
 
-<p>
-  <strong>Text:</strong>
+<div class="border">
+  <fieldset>
+  <h3><b><u> </u></b></h3><br>
+<div class="dataview">
+  <label>Ordernumber:</label>
+  <%= @order.ordernumber %>
+  <label>Text:</label>
   <%= @order.text %>
-</p>
+</div>
+<h3><b><u><!-- Überschrift falls zutreffend --> </u></b></h3><br>
+<div class="dataview">
+<!--4 ruby fields -->
+</div>
+<h3><b><u><!-- Überschrift falls zutreffend --> </u></b></h3><br>
+<div class="dataview">
+  <!--4 ruby fields -->
+</div>
+<h3><b><u><!-- Überschrift falls zutreffend --> </u></b></h3><br>
+<div class="dataview">
+  <!--4 ruby fields -->
+</div>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>
+</fieldset>
 </div>
