@@ -2,25 +2,9 @@
 
 <div class="border">
   <fieldset>
+    <legend>Auftragsdaten:</legend>
   <h3><b><u> </u></b></h3><br>
-<div class="dataview">
-  <label>Ordernumber:</label>
-  <%= @order.ordernumber %>
-  <label>Text:</label>
-  <%= @order.text %>
-</div>
-<h3><b><u><!-- Überschrift falls zutreffend --> </u></b></h3><br>
-<div class="dataview">
-<!--4 ruby fields -->
-</div>
-<h3><b><u><!-- Überschrift falls zutreffend --> </u></b></h3><br>
-<div class="dataview">
-  <!--4 ruby fields -->
-</div>
-<h3><b><u><!-- Überschrift falls zutreffend --> </u></b></h3><br>
-<div class="dataview">
-  <!--4 ruby fields -->
-</div>
+  <%= render 'form', order: @order %>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

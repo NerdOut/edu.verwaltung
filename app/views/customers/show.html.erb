@@ -2,28 +2,7 @@
 <div class="border">
   <fieldset>
     <legend>Kundendaten:</legend>
-  <h3><b><u>Person</u></b></h3><br>
-<div class="dataview">
-  <label>Sortname</label>
-  <%= @customer.sortname %>
-  <label>Company</label>
-  <%= @customer.company %>
-</div><br>
-  <h3><b><u>Kontakt</u></b></h3><br>
-<div class="dataview">
-  <label>Email</label>
-  <%= @customer.email %>
-  <label>Phone</label>
-  <%= @customer.phone %>
-</div><br>
-<h3><b><u><!-- Überschrift falls zutreffend--> </u></b></h3><br>
-<div class="dataview">
-  <!-- bis zu 4 ruby fields per dataview div-->
-</div>
-<h3><b><u><!-- Überschrift falls zutreffend--> </u></b></h3><br>
-<div class="dataview">
-  <!-- bis zu 4 ruby fields per dataview div-->
-</div> 
+  <%= render 'form', customer: @customer %>
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>
