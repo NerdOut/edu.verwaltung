@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :orders
   resources :customers
   resources :home, only: [:index]
+  resources :work_records
   root 'home#index'
 end

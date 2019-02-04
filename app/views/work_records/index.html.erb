@@ -1,0 +1,14 @@
+<div class="border">
+<fieldset>
+  <Legend>Navigation</Legend>
+
+<div class="navbar"><%= link_to image_tag("administration.JPG", size: "70x70", alt: "Administration"), users_path, admin: true, :title => "Administration" %></div>
+<div class="navbar"><%= link_to image_tag("auftragsverwaltung.JPG", size: "70x70", alt: "Ordermanagement"), orders_path, :title => "Ordermanagement" %></div>
+<div class="navbar"><%= link_to image_tag("adressverwaltung.JPG", size: "70x70", alt: "Customermanagement"), customers_path, :title => "Customermanagement" %></div>
+</fieldset>
+<br>
+<br>
+<fieldset>
+Hier muss eine Loopschleife rein die alle Aufträge pro Datum druckt sodass man die Stunden eintragen kann.
+</fieldset>
+</div>
