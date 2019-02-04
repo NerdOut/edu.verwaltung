@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_23_172946) do
+ActiveRecord::Schema.define(version: 2019_02_04_134131) do
 
   create_table "customers", force: :cascade do |t|
     t.string "sortname"
@@ -71,6 +71,17 @@ ActiveRecord::Schema.define(version: 2018_09_23_172946) do
     t.string "mobile"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "work_records", force: :cascade do |t|
+    t.string "text"
+    t.integer "hours"
+    t.integer "user_id"
+    t.integer "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_work_records_on_order_id"
+    t.index ["user_id"], name: "index_work_records_on_user_id"
   end
 
 end
